@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Etch-a-Sketch</title>
+
+    <!-- NUNITO FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/befdb26257.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container1">
+
+        <div class="brushes">
+
+            <div class="smallTitle">B R U S H E S</div>
+            <div class="brushButtons">
+                <div class="brushColumn">
+                    <button class="brush" id="brush" value="1"><i class="fa-solid fa-paintbrush"></i></button>
+                    <button class="brush" id="eraser"><i class="fa-solid fa-eraser"></i></button>
+                </div>
+            </div>
+            <button class="clearButton" id="clear">C L E A R</button>
+
+        </div>
+
+        <div class="paint">
+            <div class="smallTitle">P A I N T</div>
+            <input type="color" class="colorSelector" value="#000000">
+            <div class="colorHolder1">
+                <div class="colorPreset"><button class="colorButton" id="red"></button></div>
+                <div class="colorPreset"><button class="colorButton" id="blue"></button></div>
+            </div>
+            <div class="colorHolder2">
+                <div class="colorPreset"><button class="colorButton" id="green"></button></div>
+                <div class="colorPreset"><button class="colorButton" id="black"></button></div>
+            </div>
+            <button class="rainbow" id="rainbow" value="0">R A I N B O W</button>
+            <img class="killua" src="./images/goku.png" alt="Killua">
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="container2">
+
+        <div class="gridTitle smallTitle">E T C H - A - S K E T C H</div>
+        <div id="mainGrid" draggable="false">
+            <div class="row">
+                <div class="column"></div>
+            </div>
+        </div>
+        <div class="smallTitle" id="gridInfo"></div>
+
+    </div>
+
+
+    <div class="container3">
+
+        <div class="grid">
+            <div class="smallTitle">G R I D</div>
+
+            <div class="sliderContainer">
+                <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+            </div>
+
+            <div class="gridPresets">
+                <button class="presets" id="8">8 X 8</button>
+                <button class="presets" id="16">16 X 16</button>
+                <button class="presets" id="32">32 X 32</button>
+                <button class="presets" id="64">64 X 64</button>
+            </div>
+
+            <button class="gridToggle" value="1" id="gtoggle">G R I D&nbsp;&nbsp;&nbsp;T O G G L E</button>
+
+
+        </div>
+
+        <div class="info">
+            <div class="smallTitle">I N F O</div>
+            <img class="vendMachine" src="./images/7.png" alt="Vending Machine">
+            <div>
+                <p>This project is done as an assignment given by <a href="https://www.theodinproject.com/" target="_blank"
+                    rel="noopener noreferrer">The Odin Project</a>.</p>
+                <p></p>
+                <p>To be honest, I made this info tab just to fill the remaining space.</p>
+                <a href="https://github.com/Daksh700/Etch-a-Sketch" target="_blank"
+                        rel="noopener noreferrer">Github.com</a>
+            </div>
+        </div>
+        <div></div>
+
+    </div>
+
+</body>
+
+</html>
